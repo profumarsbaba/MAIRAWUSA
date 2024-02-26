@@ -17,7 +17,7 @@ const ShopContextProvider = (props) => {
 
   useEffect(()=>{
      
-    fetch(`${process.env.REACT_APP_API_URL}allproducts`).then((response)=> response.json()).then((data)=> setAll_product(data))
+    fetch(`${process.env.REACT_APP_API_URL}/allproducts`).then((response)=> response.json()).then((data)=> setAll_product(data))
     if(localStorage.getItem('auth-token')){
       fetch(`${process.env.REACT_APP_API_URL}/getcart`,{
         method:'POST',
