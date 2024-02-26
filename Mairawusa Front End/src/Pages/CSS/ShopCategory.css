@@ -1,0 +1,215 @@
+.shopcategory-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(-180deg, #fdeaff, #e1ffea22 40%);
+    
+    width: 95%;
+    z-index: 1;
+  
+}
+.shopcategory-banner .discount{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.discount h1{
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+.discount p{
+    font-size: x-large;
+}
+.discount span{
+    color: rgb(231, 145, 33);
+}
+
+.discount button{
+   padding: 25px;
+   outline: none;
+   border: none;
+   border-radius: 20px;
+   background: #90cafa;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.shopcategory-inedxSort{
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategory-sort{
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+}
+.shopcategory-inedxSort p span{
+    font-weight: 600;
+}
+.shopcategory-product{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 25px;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed; 
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width:1280px){
+    .shopcategory-banner{
+        padding: 0px 80px;
+        margin-bottom: 120px;
+    }
+    .discount h1{
+        font-size: 40px;
+    }
+    .discount p{
+        font-size: 18px;
+    }
+    .right img{
+        width: 300px;
+        height: 300px;
+    }
+    .discount button{
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .right{
+        padding-top: 30px;
+    }
+    /* ----------style---------- */
+
+    .shopcategory-inedxSort{
+        width: 90%;
+        margin: auto;
+    }
+    .shopcategory-sort{
+       padding: 5px 10px;
+       font-size: 12px;
+    }
+    .shopcategory-inedxSort p{
+        font-size: 12px;
+    }
+    .shopcategory-product{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .shopcategory-product .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}    
+@media(max-width:1024px){
+    .shopcategory-banner{
+        padding: 0px 6px;
+        margin-top: 80px;
+        /* height: 40vh; */
+    }
+    .discount h1{
+        font-size: 30px;
+    }
+    .discount p{
+        font-size: 16px;
+    }
+    .right img{
+        width: 200px;
+        height: 200px;
+    }
+    .discount button{
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .right{
+        padding-top: 10px;
+    }
+
+
+}    
+@media(max-width:800px){
+    .shopcategory-banner{
+      
+        margin-top: 80px;
+     
+    }
+    .discount h1{
+        font-size: 22px;
+    }
+    .discount p{
+        font-size: 13px;
+    }
+    .right img{
+        width: 180px;
+        height: 200px;
+    }
+    .discount button{
+        width: 140px;
+        height: 30px;
+        font-size: 13px;
+    }
+        /* ---------style----------- */
+
+        .shopcategory-product{
+            width: 95%;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .shopcategory-loadmore{
+            margin: 60px auto;
+            width: 150px;
+            height: 40px;
+            font-size: 13px;
+        }
+        
+ 
+}    
+@media(max-width:500px){
+    .shopcategory-banner{
+      
+        margin-bottom: 50px;
+     
+    }
+    .discount h1{
+        font-size: 16px;
+    }
+    .discount p{
+        font-size: 10px;
+    }
+    .right img{
+        width: 120px;
+        height: 120px;
+    }
+    .discount button{
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    /* ------------style----------- */
+    .shopcategory-product{
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+}    
